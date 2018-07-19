@@ -2,6 +2,11 @@
   .rating {
     overflow: hidden;
     padding-left: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 
     .stars {
       float: left;
@@ -43,6 +48,8 @@
     margin: 0 0 50px 0;
     padding: 0;
     list-style: none;
+    max-width: 1055px;
+    margin: auto;
 
     .title {
       font-family: 'Mylodon-Light', 'arial', 'sans-serif';
@@ -60,12 +67,15 @@
       cursor: pointer;
       text-align: center;
       margin-bottom: 23px;
+      position: relative;
+      height: 357px;
 
-      .list-item {
+    .list-item {
         border: 1px solid #10B7FF;
         overflow: hidden;
         margin-bottom: 10px;
         text-align: center;
+        min-height: 284px;
         -webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(#0000), color-stop(30%, #0000), to(#fafafa1a));
 
         .poster {

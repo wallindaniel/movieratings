@@ -9,6 +9,23 @@ const Movies = props => (
         {({ loading, data: { movies } }) => {
             if (loading) return "";
 
+            function textTruncate(str, length, ending) {
+                if (length === null) {
+                    length = 10;
+                }
+                if (ending === null) {
+                    ending = '...';
+                }
+
+                console.log(str.length);
+
+                if (str.length > length) {
+                    return str.substring(0, length - ending.length) + ending;
+                } else {
+                    return str;
+                }
+            }
+
             return (
                 <div className="movie-library">
                     <h1 className="heading">Movie Library</h1>
@@ -22,7 +39,7 @@ const Movies = props => (
                                          alt="movie-thumbnail"
                                          src={`http://image.tmdb.org/t/p/w185${movie.poster_path}`}/>
                                 </li>
-                                <span className="title">{movie.title}</span>
+                                <span className="title">{textTruncate(movie.title, 20, '...')}</span>
                                 <div className="rating">
                                     <div className="stars">
                                         <span className="star filled">☆</span>
