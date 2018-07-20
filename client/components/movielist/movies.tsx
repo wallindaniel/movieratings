@@ -91,7 +91,11 @@ class MovieList extends React.Component<MovieListProps, MovieListState, {}> {
                          onClick={event => this.showRatingDialog(movie)}
                          className="like-wrapper">
                         <span className="average">
-                            {this.calculateAverage(movie.ratings)}
+                            {
+                                movie.ratings.length
+                                    ? this.calculateAverage(movie.ratings)
+                                    : <i className="fas fa-heart" />
+                            }
                         </span>
                     </div>
                     <img className="poster"

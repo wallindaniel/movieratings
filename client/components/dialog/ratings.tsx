@@ -58,7 +58,10 @@ class Dialog extends Component<RatingProps, RatingState, {}> {
     @autobind
     public closeDialog() {
         this.props.close();
-        this.setState({ rating: 0 });
+        this.setState({
+            rating: 0,
+            validation: ''
+        });
     }
 
     @autobind
