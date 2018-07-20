@@ -1,39 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { ReduxCache, apolloReducer } from 'apollo-cache-redux';
-import { Provider } from 'react-redux';
-import thunkMiddleware from 'redux-thunk';
 import { ApolloProvider } from 'react-apollo';
-import { ApolloClient } from 'apollo-client';
+import ApolloClient from 'apollo-boost';
 import { HttpLink } from 'apollo-link-http';
 import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
-import { routerReducer } from 'react-router-redux';
-import playerReducer from './components/movielist/reducers';
+import { Provider } from 'mobx-react';
+import store from './stores/moviestore';
 import MovieList from './components/movielist';
 import styles from './styles.scss';
 
 const history = createBrowserHistory();
-const composeEnhancers =
-    typeof window === 'object' &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-        window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-        }) : compose;
-
-const store =
-    createStore(combineReducers({
-        apollo: apolloReducer,
-        routing: routerReducer,
-        player: playerReducer,
-    }), compose(composeEnhancers(applyMiddleware(thunkMiddleware)))
-);
-
-const cache = new ReduxCache({ store });
-
 const client = new ApolloClient({
-    link: new HttpLink({ uri: '/graphql' }),
-    cache
+    link: new HttpLink({ uri: '/graphql' })
 });
 
 ReactDOM.render(

@@ -32,7 +32,7 @@ function graphqlMiddleware() {
 
   function makeRequest() {
       return new Promise((resolve, reject) => {
-          return request.get({url: "https://api.themoviedb.org/3/discover/movie?api_key=549ba974993b237cd81549bbfdaf2a55"}, (error, response, body) => {
+          return request.get({ url: "https://api.themoviedb.org/3/discover/movie?api_key=549ba974993b237cd81549bbfdaf2a55"}, (error, response, body) => {
               if (!error && response.statusCode === 200) {
                   const obj = JSON.parse(body);
                   resolve(obj.results);

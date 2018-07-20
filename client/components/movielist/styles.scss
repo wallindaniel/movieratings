@@ -33,6 +33,124 @@
     }
   }
 
+  .average {
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 3px;
+    right: 0;
+    top: 7px;
+    bottom: 0;
+    letter-spacing: 1px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .rating-dialog {
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    background-color: #061823;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid #10B7FF;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+
+    .rating {
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: relative;
+      padding: 0;
+      display: inline-block;
+      margin-top: 30px;
+      text-align: center;
+
+      .stars {
+        float: none;
+        padding: 5px 0;
+
+        .star {
+          position: relative;
+          color: #D4AF37;
+          margin-right: 2px;
+          font-size: 40px;
+
+          &.filled:before {
+            content: "\2605";
+            position: absolute;
+            top: -9px;
+          }
+        }
+      }
+    }
+
+    .heading {
+      font-family: 'Mylodon-Light', 'arial', 'sans-serif';
+      text-align: center;
+      color: #10B7FF;
+      margin: 20px 0 0 0;
+      letter-spacing: 4px;
+      font-size: 20px;
+      display: block;
+
+      + span {
+        font-family: 'Mylodon-Light', 'arial', 'sans-serif';
+        text-align: center;
+        color: #10B7FF;
+        margin: 20px 0 0 0;
+        letter-spacing: 4px;
+        font-size: 20px;
+        display: block;
+      }
+    }
+
+    .rating-comment {
+      font-family: 'Mylodon-Light', 'arial', 'sans-serif';
+      text-align: center;
+      color: #10B7FF;
+      margin: 20px 0 0 0;
+      letter-spacing: 4px;
+      font-size: 20px;
+      display: block;
+    }
+
+    .rating-button {
+      background: none;
+      color: #10B7FF;
+      border: 1px solid #10B7FF;
+      width: 90%;
+      height: 58px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-family: 'Mylodon-Light', 'arial', 'sans-serif';
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      cursor: pointer;
+    }
+  }
+
   .heading {
     font-family: 'Mylodon-Light', 'arial', 'sans-serif';
     text-align: center;
@@ -64,19 +182,44 @@
       border-radius: 3px;
       list-style-image: none;
       color: #10B7FF;
-      cursor: pointer;
       text-align: center;
       margin-bottom: 23px;
       position: relative;
       height: 357px;
 
     .list-item {
+        position: relative;
         border: 1px solid #10B7FF;
         overflow: hidden;
         margin-bottom: 10px;
         text-align: center;
-        min-height: 284px;
-        -webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(#0000), color-stop(30%, #0000), to(#fafafa1a));
+        max-height: 277px;
+      -webkit-box-reflect: below -2px -webkit-gradient(linear, left top, left bottom, from(#0000), color-stop(30%, #0000), to(#fafafa1a));
+
+        .like-wrapper {
+          width: 30px;
+          height: 30px;
+          background-color: #D4AF37;
+          position: absolute;
+          z-index: 99;
+          border-radius: 15px;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+        }
+
+        .like-movie {
+          position: absolute;
+          right: 0;
+          top: 2px;
+          bottom: 0;
+          z-index: 9;
+          font-size: 20px;
+          color: #FFF;
+          margin: auto;
+          left: 0;
+          height: 20px;
+        }
 
         .poster {
           height: 100%;
