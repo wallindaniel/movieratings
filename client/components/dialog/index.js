@@ -10,7 +10,8 @@ class Dialog extends Component {
         super(props);
 
         this.state = {
-            rating: 0
+            rating: 0,
+            validation: ''
         };
 
         this.ratingComments = {
@@ -25,14 +26,25 @@ class Dialog extends Component {
     @autobind
     submitRating() {
         const { movie } = this.props;
-        this.props.close(movie.id, this.state.rating);
+        if (this.state.rating !== 0) {
+            this.props.close(movie.id, this.state.rating);
+            this.setState({ rating: 0, validation: '' });
+        } else {
+            this.setState({ validation: 'Please select rating' })
+        }
+    }
+
+    @autobind
+    closeDialog() {
+        this.props.close();
         this.setState({ rating: 0 });
     }
 
     @autobind
     handleStars(event) {
         this.setState({
-            rating: event.currentTarget.id
+            rating: event.currentTarget.id,
+            validation: ''
         });
     }
 
@@ -66,29 +78,36 @@ class Dialog extends Component {
             );
         }
 
-        return stars;
+        return (
+            <div className="rating">
+                <div className="stars">
+                    {stars}
+                </div>
+            </div>
+        );
+
     }
 
     render() {
-        const { show, movie } = this.props;
+        const { show, movie, average } = this.props;
 
         return (
             show &&
             <div className="overlay">
                 <div className="rating-dialog">
+                    <i onClick={this.closeDialog} className="close-icon fas fa-times" />
                     <h1 className="heading">What did you think about</h1>
-                    <span>{movie.title}</span>
-                    <div className="rating">
-                        <div className="stars">
-                            {this.renderStars()}
-                        </div>
-                    </div>
+                    <span className="sub-heading">{movie.title}</span>
+                    <span className="number-of-votes">{`Number of votes: (${movie.ratings.length})`}</span>
+                    <span className="average-votes">{`Average vote: (${average(movie)})`}</span>
+                    {this.renderStars()}
                     {this.renderRatingComment()}
                     <button
                         onClick={this.submitRating}
                         className="rating-button">
                         Rate movie
                     </button>
+                    <span className="validation">{this.state.validation}</span>
                 </div>
             </div>
         );

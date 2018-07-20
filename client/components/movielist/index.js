@@ -23,7 +23,9 @@ class MovieList extends Component {
         this.setState({
             showDialog: false
         }, () => {
-            this.props.store.addRating(movieId, rating);
+            if (movieId) {
+                this.props.store.addRating(movieId, rating);
+            }
         })
     }
 
@@ -56,19 +58,17 @@ class MovieList extends Component {
 
     @autobind
     calculateAverage(movie) {
+        let rating = 0;
         let total = 0;
 
         if (movie.ratings.length) {
             for (let i = 0; i < movie.ratings.length; i++) {
                 total += parseInt(movie.ratings[i]);
             }
-            return (
-                <span className="average">
-                    {(total / movie.ratings.length).toFixed(1)}
-                </span>
-            );
+            rating = (total / movie.ratings.length).toFixed(1)
         }
-        return <i className="like-movie fas fa-heart" />;
+
+        return rating;
     }
 
     renderMovies() {
@@ -81,23 +81,15 @@ class MovieList extends Component {
                     <div id={movie.id}
                          onClick={event => this.showRatingDialog(movie)}
                          className="like-wrapper">
-                        {this.calculateAverage(movie)}
+                        <span className="average">
+                            {this.calculateAverage(movie)}
+                        </span>
                     </div>
                     <img className="poster"
                          alt="movie-thumbnail"
                          src={`http://image.tmdb.org/t/p/w185${movie.poster_path}`}/>
                 </li>
                 <span className="title">{this.textTruncate(movie.title, 20, '...')}</span>
-                <div className="rating">
-                    <div className="stars">
-                        <span className="star filled">☆</span>
-                        <span className="star filled">☆</span>
-                        <span className="star filled">☆</span>
-                        <span className="star filled">☆</span>
-                        <span className="star">☆</span>
-                        <span className="votes">({movie.ratings.length})</span>
-                    </div>
-                </div>
             </div>
         ))
     }
@@ -117,6 +109,7 @@ class MovieList extends Component {
                             {() => (
                                 <div className="movie-library">
                                     <Dialog
+                                        average={this.calculateAverage}
                                         addRating={this.addRating}
                                         close={this.closeRatingDialog}
                                         movie={this.state.movie}
