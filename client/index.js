@@ -7,7 +7,7 @@ import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
 import { Provider } from 'mobx-react';
 import store from './stores/moviestore';
-import MovieList from './components/movielist';
+import MovieList from './components/movielist/movies.tsx';
 import styles from './styles.scss';
 
 const history = createBrowserHistory();

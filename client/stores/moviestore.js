@@ -20,5 +20,5 @@ class MovieStore {
     }
 }
 
-const store = window.store = new MovieStore();
-export default store;
+const Store = window.store = new MovieStore();
+export default Store;

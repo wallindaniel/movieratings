@@ -1,25 +1,26 @@
-# Movielist
+# Rate movies
 
-Applikation som visar filmer med videospelare.
+Applikation med betygsättning av filter
 
 **Följande tekniker används:**
 
 - React
-- Redux
+- MobX
 - Node.js
 - Express.js
 - GraphQl
 - SASS
 - Webpack
 - Babel
+- TypeScript
 
 **Kod på GitHub:**
 
-https://github.com/wallindaniel/movies
+https://github.com/wallindaniel/movieratings
 
 **Project på Heroku:**
 
-https://topmovielibrary.herokuapp.com/
+https://mymovieratings.herokuapp.com/
 
 **För att köra projektet lokalt:**
 

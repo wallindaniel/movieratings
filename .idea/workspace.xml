@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16452bcd-b8f7-4160-8a4a-cd5f54b9dc3c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/components/dialog/ratings.tsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/components/movielist/movies.tsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/components/movielist/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/dialog/index.js" afterPath="$PROJECT_DIR$/client/components/dialog/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/dialog/styles.scss" afterPath="$PROJECT_DIR$/client/components/dialog/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/movielist/index.js" afterPath="$PROJECT_DIR$/client/components/movielist/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/movielist/styles.scss" afterPath="$PROJECT_DIR$/client/components/movielist/styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stores/moviestore.js" afterPath="$PROJECT_DIR$/client/stores/moviestore.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/client/static/bundle.js" afterPath="$PROJECT_DIR$/dist/client/static/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack/webpack.config.js" afterPath="$PROJECT_DIR$/webpack/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,31 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="graphql.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/graphql.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="253">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -57,8 +45,52 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/movielist/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="414">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movies.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/movielist/movies.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moviestore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stores/moviestore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ratings.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/dialog/ratings.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2576">
+              <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -69,8 +101,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/dialog/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="-447">
+              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -78,66 +110,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/dialog/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queries.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/movielist/queries.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding>
-                <marker date="1531953051000" expanded="true" signature="66:187" ph="query...{&#10;        movie(id: $id) {&#10;            id&#10;            manifest&#10;            name&#10;        }&#10;    }" />
-                <marker date="1531953051000" expanded="true" signature="72:77" ph="movie...movie" />
-                <marker date="1531953051000" expanded="true" signature="77:91" ph="(...)" />
-                <marker date="1531953051000" expanded="true" signature="83:89" ph="String...String" />
-                <marker date="1531953051000" expanded="true" signature="92:187" ph="{...}" />
-                <marker date="1531953051000" expanded="true" signature="102:107" ph="movie...movie" />
-                <marker date="1531953051000" expanded="true" signature="102:181" ph="movie...{&#10;            id&#10;            manifest&#10;            name&#10;        }" />
-                <marker date="1531953051000" expanded="true" signature="107:116" ph="(...)" />
-                <marker date="1531953051000" expanded="true" signature="108:110" ph="id...id" />
-                <marker date="1531953051000" expanded="true" signature="117:181" ph="{...}" />
-                <marker date="1531953051000" expanded="true" signature="131:133" ph="id...id" />
-                <marker date="1531953051000" expanded="true" signature="146:154" ph="manifest...manifest" />
-                <marker date="1531953051000" expanded="true" signature="167:171" ph="name...name" />
-                <marker date="1531953051000" expanded="true" signature="227:589" ph="query...{&#10;        movies {&#10;            id&#10;            name&#10;        }&#10;    }" />
-                <marker date="1531953051000" expanded="true" signature="233:239" ph="movies...movies" />
-                <marker date="1531953051000" expanded="true" signature="240:589" ph="{...}" />
-                <marker date="1531953051000" expanded="true" signature="250:256" ph="movies...movies" />
-                <marker date="1531953051000" expanded="true" signature="250:583" ph="movies...{&#10;            id&#10;            name&#10;        }" />
-                <marker date="1531953051000" expanded="true" signature="257:583" ph="{...}" />
-                <marker date="1531953051000" expanded="true" signature="271:273" ph="id...id" />
-                <marker date="1531953051000" expanded="true" signature="286:296" ph="vote_count...vote_count" />
-                <marker date="1531953051000" expanded="true" signature="309:314" ph="video...video" />
-                <marker date="1531953051000" expanded="true" signature="327:339" ph="vote_average...vote_average" />
-                <marker date="1531953051000" expanded="true" signature="352:357" ph="title...title" />
-                <marker date="1531953051000" expanded="true" signature="370:380" ph="popularity...popularity" />
-                <marker date="1531953051000" expanded="true" signature="393:404" ph="poster_path...poster_path" />
-                <marker date="1531953051000" expanded="true" signature="417:434" ph="original_language...original_language" />
-                <marker date="1531953051000" expanded="true" signature="447:461" ph="original_title...original_title" />
-                <marker date="1531953051000" expanded="true" signature="474:483" ph="genre_ids...genre_ids" />
-                <marker date="1531953051000" expanded="true" signature="496:509" ph="backdrop_path...backdrop_path" />
-                <marker date="1531953051000" expanded="true" signature="522:527" ph="adult...adult" />
-                <marker date="1531953051000" expanded="true" signature="540:548" ph="overview...overview" />
-                <marker date="1531953051000" expanded="true" signature="561:573" ph="release_date...release_date" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -145,18 +123,18 @@
       <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/movielist/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="377">
+              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moviestore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/stores/moviestore.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/movielist/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,9 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>node-sass</find>
-      <find>this.video</find>
-      <find>fo</find>
       <find>foo</find>
       <find>react-apollo</find>
       <find>data</find>
@@ -193,9 +168,12 @@
       <find>like-</find>
       <find>add</find>
       <find>calcu</find>
+      <find>ratingComment</find>
+      <find>movie.</find>
+      <find>-9</find>
       <find>like-wr</find>
       <find>calculate</find>
-      <find>-9</find>
+      <find>average</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,12 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/components/movie/methods.js" />
-        <option value="$PROJECT_DIR$/client/components/controls/index.js" />
-        <option value="$PROJECT_DIR$/client/components/movie/lifeCycle.js" />
-        <option value="$PROJECT_DIR$/webpack/webpack.config.js" />
-        <option value="$PROJECT_DIR$/client/components/movie/queries.js" />
-        <option value="$PROJECT_DIR$/client/components/movies/lifeCycle.js" />
         <option value="$PROJECT_DIR$/client/components/movie/lifecycle.js" />
         <option value="$PROJECT_DIR$/client/components/player/index.js" />
         <option value="$PROJECT_DIR$/client/components/player/player.js" />
@@ -233,7 +205,6 @@
         <option value="$PROJECT_DIR$/client/components/movie/controls/lifecycle.js" />
         <option value="$PROJECT_DIR$/client/components/movie/player/lifecycle.js" />
         <option value="$PROJECT_DIR$/client/components/movie/player/functions.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/client/styles.scss" />
         <option value="$PROJECT_DIR$/client/components/movie/index.js" />
         <option value="$PROJECT_DIR$/client/components/movies/index.js" />
@@ -249,12 +220,19 @@
         <option value="$PROJECT_DIR$/dist/client/index.html" />
         <option value="$PROJECT_DIR$/server/graphql.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/client/index.js" />
-        <option value="$PROJECT_DIR$/client/stores/moviestore.js" />
-        <option value="$PROJECT_DIR$/client/components/movielist/styles.scss" />
-        <option value="$PROJECT_DIR$/client/components/movielist/index.js" />
-        <option value="$PROJECT_DIR$/client/components/dialog/index.js" />
         <option value="$PROJECT_DIR$/client/components/dialog/styles.scss" />
+        <option value="$PROJECT_DIR$/client/components/movielist/movies.ts" />
+        <option value="$PROJECT_DIR$/client/index.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/client/components/movielist/styles.css" />
+        <option value="$PROJECT_DIR$/webpack/webpack.config.js" />
+        <option value="$PROJECT_DIR$/client/components/movielist/styles.scss" />
+        <option value="$PROJECT_DIR$/client/components/dialog/index.js" />
+        <option value="$PROJECT_DIR$/client/components/dialog/ratings.tsx" />
+        <option value="$PROJECT_DIR$/client/stores/moviestore.js" />
+        <option value="$PROJECT_DIR$/client/components/movielist/index.js" />
+        <option value="$PROJECT_DIR$/client/components/movielist/movies.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -271,7 +249,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="41" />
-    <option name="y" value="143" />
+    <option name="y" value="23" />
     <option name="width" value="1910" />
     <option name="height" value="1151" />
   </component>
@@ -341,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="webpack" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -414,10 +392,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,24 +521,25 @@
       <workItem from="1531497038939" duration="97831000" />
       <workItem from="1531852026470" duration="22984000" />
       <workItem from="1531933848137" duration="923000" />
-      <workItem from="1531937506903" duration="72377000" />
+      <workItem from="1531937506903" duration="86934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390493000" />
+    <option name="totallyTimeSpent" value="405050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="143" width="1910" height="1151" extended-state="0" />
+    <frame x="41" y="23" width="1910" height="1151" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.023607176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023607176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24192694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -613,15 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/components/controls/controls.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/controls/lifecycle.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/movie/lifecycle.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/movies/queries.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/movies/lifeCycle.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/movies/movies.js" />
-    <entry file="file://$PROJECT_DIR$/client/actions/player.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/player/actions.js" />
-    <entry file="file://$PROJECT_DIR$/client/components/controls/functions.js" />
     <entry file="file://$PROJECT_DIR$/client/components/player/functions.js" />
     <entry file="file://$PROJECT_DIR$/client/components/player/reducers.js" />
     <entry file="file://$PROJECT_DIR$/client/components/movie/movie.js" />
@@ -658,13 +624,6 @@
     <entry file="file://$PROJECT_DIR$/client/components/movie/controls/lifecycle.js" />
     <entry file="file://$PROJECT_DIR$/client/components/movie/controls/functions.js" />
     <entry file="file://$PROJECT_DIR$/client/components/movie/player/lifecycle.js" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,8 +653,8 @@
         <state relative-caret-position="319">
           <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="8" />
           <folding>
-            <marker date="1532038623000" expanded="true" signature="296:1093" ph="{&quot;apollo-boost&quot;: &quot;^0.1.10&quot;...}" />
-            <marker date="1532038623000" expanded="true" signature="2164:2316" ph="{&quot;babel-core&quot;: &quot;^6.26.3&quot;...}" />
+            <marker date="1532085872000" expanded="true" signature="296:671" ph="{&quot;apollo-boost&quot;: &quot;^0.1.10&quot;...}" />
+            <marker date="1532085872000" expanded="true" signature="2341:2493" ph="{&quot;babel-core&quot;: &quot;^6.26.3&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -729,16 +688,6 @@
         <state relative-caret-position="161">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,46 +733,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stores/moviestore.js">
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/movies.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        <state relative-caret-position="-1048">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/movielist/styles.scss">
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/movies.tsx.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="345">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/movielist/index.js">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="608">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/dialog/index.js">
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/rating.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/components/dialog/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/dialog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/dialog/ratings.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2576">
+          <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stores/moviestore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/movielist/movies.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding />
         </state>
       </provider>
