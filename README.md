@@ -1,4 +1,4 @@
-# Movierating
+# Movie-rating
 
 Applikation med betygsättning av filmer.
 
