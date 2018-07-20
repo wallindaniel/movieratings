@@ -8,7 +8,7 @@ Applikation med betygsättning av filmer
 - MobX
 - Node.js
 - Express.js
-- GraphQl
+- GraphQL
 - SASS
 - Webpack
 - Babel
