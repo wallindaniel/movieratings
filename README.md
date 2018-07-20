@@ -1,6 +1,6 @@
-# Rate movies
+# Movierating
 
-Applikation med betygsättning av filter
+Applikation med betygsättning av filmer
 
 **Följande tekniker används:**
 
@@ -28,6 +28,6 @@ https://mymovieratings.herokuapp.com/
 - npm install
 - npm run start
 
-**Övrigtt:**
+**Övrigt:**
 
 Applikationen är optimerad för desktop och Chrome.
