@@ -1,6 +1,6 @@
 # Movierating
 
-Applikation med betygsättning av filmer
+Applikation med betygsättning av filmer.
 
 **Följande tekniker används:**
 
@@ -9,6 +9,7 @@ Applikation med betygsättning av filmer
 - Node.js
 - Express.js
 - GraphQL
+- Apollo
 - SASS
 - Webpack
 - Babel
